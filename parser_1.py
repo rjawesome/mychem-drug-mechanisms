@@ -37,8 +37,8 @@ def load_data(data_folder):
     if len(data['hits']) == 0:
       break
 
-    for c in data['hits']:
-      chembl_list = c['chembl']
+    for hit in data['hits']:
+      chembl_list = hit['chembl']
       for chem in to_list(chembl_list):
         for drug in chem.get('drug_mechanisms', []):
           sbj = {
