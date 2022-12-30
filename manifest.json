@@ -1,0 +1,21 @@
+{
+    "version": "0.2",
+    "requires": ["requests"],
+    "__metadata__": {
+        "license_url": "https://www.apache.org/licenses/LICENSE-2.0",
+        "licence": "https://www.apache.org/licenses/LICENSE-2.0",
+        "url": "http://mychem.info",
+        "description": "A BioThings API for chemical/drug annotations"
+    },
+    "dumper": {
+        "data_url": [
+            "https://www.ebi.ac.uk/chembl/interface_api/delayed_jobs/outputs/DOWNLOAD-jgNyZYuEBIx0bG8GAt-xS_ow1uKyAG_KbF-6Ar_P7BI=/DOWNLOAD-jgNyZYuEBIx0bG8GAt-xS_ow1uKyAG_KbF-6Ar_P7BI=.zip"
+        ],
+        "uncompress": true,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser_1:load_data",
+        "on_duplicates": "error"
+    }
+}
